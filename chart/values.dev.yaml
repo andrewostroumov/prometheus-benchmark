@@ -1,0 +1,14 @@
+targetsCount: 500
+scrapeInterval: 10s
+queryInterval: 10s
+scrapeConfigUpdatePercent: 1
+scrapeConfigUpdateInterval: 10m
+writeReplicaMem: "4Gi"
+writeReplicaCPU: 1
+remoteStorages:
+  vm: null
+  mimir:
+    writeURL: "http://mimir-nginx.mimir.svc:80/api/v1/push"
+    writeURLReplicas: 1
+    writeHeaders: "X-Scope-OrgID:mimir-bench-1"
+    readHeaders: "X-Scope-OrgID:mimir-bench-1"
