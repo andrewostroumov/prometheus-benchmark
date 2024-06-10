@@ -1,4 +1,4 @@
-targetsCount: 500
+targetsCount: 2500
 scrapeInterval: 10s
 queryInterval: 10s
 scrapeConfigUpdatePercent: 1
